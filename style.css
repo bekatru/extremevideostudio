@@ -23,8 +23,30 @@
   color: #ffffff;
 }
 
+nav.navbar.navbar-expand-lg.navbar-light {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: baseline;
+}
+
 .nav-item {
 	margin-left: 30px;
+}
+
+a.nav-link {
+	padding: 30px 0px 30px 0px;
+	border-top-width: 0;
+}
+
+a.nav-link:hover{
+	padding-top: 28px;
+	border-top: solid orange 2px;
+}
+
+a.active {
+	border-top: solid orange 2px;
+	padding-top: 28px;
 }
 
 .popup .overlay {
@@ -38,19 +60,16 @@
   display:none;
 }
 
-.popup .content {
+div.content {
   position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%) scale(0);
   background:#fff;
   width:436px;
-  height:742px;
+  height:642px;
   z-index:2;
-  padding:20px;
-  box-sizing:border-box;
   border-radius: 20px;
-  padding: 20px;
   margin: 0;
 }
 
@@ -80,13 +99,13 @@
 }
 
 .popupholder {
-  width:350px;
-  height:60px;
-  border-radius: 60px;
-  border-color: #ccc;
-  text-align: center;
-  display: flex;
-  align-items: center;
+  	padding: 0;
+  	margin: 0;
+	width:auto;
+	height:60px;
+	border-radius: 60px;
+	border-color: #ccc;
+	text-align: center;
 }
 
 .popupholder:active, :hover, :focus {
@@ -94,37 +113,40 @@
   outline-offset: 0;
 }
 
+
+div.container2{
+	padding:40px 40px;
+	display: inline-grid;
+	justify-content: center;
+	grid-row-gap: 20px;
+	margin-top: 40px;
+	height: 602px;
+
+}
+
 h1 {
   font-size: 25px;
   text-align: center;
+  margin: auto;
   font-weight: 600;
-
 }
 
 h2 {
   font-size: 16px;
-  margin: 70px;
+  margin: 10px 65px 10px 65px;
   text-align: center;
 }
 
-nav.navbar.navbar-expand-md.navbar-light {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: baseline;
+img.logo2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	align-self: center;
 }
 
-a.nav-link {
-	padding: 30px 0px 30px 0px;
-	border-top-width: 0;
-}
-
-a.nav-link:hover{
-	padding-top: 28px;
-	border-top: solid orange 2px;
-}
-
-a.active {
-	border-top: solid orange 2px;
-	padding-top: 28px;
+div.line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: orange;
 }

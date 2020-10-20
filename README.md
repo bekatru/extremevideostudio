@@ -1,2 +1,2 @@
-# extremevideostidio
+# extremevideostudio
 Landing page

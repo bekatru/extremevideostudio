@@ -1,4 +1,8 @@
-  
+html {
+	margin: 0;
+}
+
+
 .btn {
   -webkit-border-radius: 60;
   -moz-border-radius: 60;
@@ -7,8 +11,10 @@
   color: #ffffff;
   font-size: 14px;
   background: #e4a847;
-  padding: 10px 30px 10px 30px;
   text-decoration: none;
+  padding: 15px 30px 15px 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .btn:hover {
@@ -19,3 +25,28 @@
 .nav-item {
 	margin-left: 30px;
 }
+
+
+
+nav.navbar.navbar-expand-md.navbar-light {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: baseline;
+}
+
+a.nav-link {
+	padding: 30px 0px 30px 0px;
+	border-top-width: 0;
+}
+
+a.nav-link:hover{
+	padding-top: 28px;
+	border-top: solid orange 2px;
+}
+
+a.active {
+	border-top: solid orange 2px;
+	padding-top: 28px;
+}
+

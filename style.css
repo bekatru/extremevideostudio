@@ -1,6 +1,16 @@
-.callback {
-	padding: 10px 40px;
-	background-color: orange;
-	border-width: 0;
-	border-radius: 50px;
+.btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #e4a847;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f59700;
+  text-decoration: none;
 }

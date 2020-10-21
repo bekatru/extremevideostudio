@@ -80,8 +80,7 @@ div.content {
   top:20px;
   width:30px;
   height:30px;
-  background:#222;
-  color:#fff;
+  color:black;
   font-size:25px;
   font-weight:600;
   line-height:30px;
@@ -106,13 +105,13 @@ div.content {
   border-radius: 60px;
   border-color: #ccc;
   text-align: center;
+  border-style: solid;
 }
 
 .popupholder:active, :hover, :focus {
   outline: 0;
   outline-offset: 0;
 }
-
 
 div.container2{
   padding:40px 40px;
@@ -149,4 +148,76 @@ div.line {
   width: 100%;
   height: 2px;
   background-color: orange;
+}
+
+h1.headers {
+  font-size: 48px;
+  text-align: left;
+  margin-top: 70px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.lineheaders {
+  display: block;
+  width: 700px;
+  height: 2px;
+  background-color: #e4a847;
+}
+
+.row {
+  margin-top: 90px;
+}
+
+.orangeblock {
+  width: 100%;
+  height: 160px;
+  background-color: #e4a847;
+}
+
+.orangeblock-one {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calc {
+  width: 555px;
+  margin-right: 120px;
+}
+
+.calc-text {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.btn-calc {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: 'Jost', sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  background: #e4a847;
+  text-decoration: none;
+  padding: 15px 50px 15px 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-color: #ffffff;
+  border-style: solid;
+  margin-right: 65px;
+}
+
+
+.btn-calc:hover {
+  background: #f59700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button.btn-calc:focus {
+    outline: none;
 }

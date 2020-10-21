@@ -2,6 +2,39 @@
   font-family: 'Jost', sans-serif;
 }
 
+.banner {
+  background-image:url('../assets/bg.png');
+  background-repeat:no-repeat;
+  background-size:inherit;
+  background-position:center;
+}
+
+ div.space {
+  height: 40px;
+}
+
+
+div.row.txt {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+div.col.about {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+div.row.txt {
+  align-items: center;
+}
+
+div.row.txt h1{
+  font-size: 18px;
+  text-align: left;
+}
+
+
 .btn {
   -webkit-border-radius: 60;
   -moz-border-radius: 60;
@@ -16,12 +49,22 @@
   margin-bottom: 15px;
 }
 
+
 .btn:hover {
   background: #f59700;
   text-decoration: none;
   color: #ffffff;
 }
 
+#ob{
+  margin: 0;
+  padding: 15px 60px;
+  background-color: transparent;
+  border-color: #e4a847;
+  border-width: 3px;
+  color: black;
+
+}
 
 nav.navbar.navbar-expand-lg.navbar-light {
   padding: 0;

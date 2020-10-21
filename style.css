@@ -155,8 +155,14 @@ div.line {
   background-color: orange;
 }
 
-img.banner {
-  max-width: 100%;
-  height: auto;
-  background-position: top;
+.first-page {
+  background-image: url("assets/bg.png");
+  height: 900px;
+}
+
+.container3 {
+  display: grid;
+  margin-right: 366.5px;
+  margin-left: 366.5px;
+  padding: 15px;
 }

@@ -23,6 +23,10 @@
   color: #ffffff;
 }
 
+div.container-fluid{
+  padding: 0;
+}
+
 nav.navbar.navbar-expand-lg.navbar-light {
   padding: 0;
   margin: 0;

@@ -10,95 +10,124 @@
 	</head>
 
 <body>
-	<!-- First Page -->
-	<div class='container'>
-			<nav class="navbar navbar-expand-lg navbar-light">
-			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="navbar-toggler-icon"></span>
-			    </button>
-			    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
-			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
-				    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
-				    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
-				    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
-				    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
-				    </ul>
-			    </div>
-			</nav>
 
-			<div></div>
-			<img src="assets/toptext.png">
-			<button onclick="togglePopup()" class="btn2">ЗАКАЗАТЬ</button>
-			<h3>
+	<!-- First Page -->
+<div class='banner'>
+	<div class='container'>
+		<div class='row'>
+			<div class='col'>
+				<nav class="navbar navbar-expand-lg navbar-light">
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    	<span class="navbar-toggler-icon"></span>
+				    </button>
+				    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav ml-auto">
+					    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
+					    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
+					    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
+					    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+					    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
+					    </ul>
+				    </div>
+				</nav>
+			</div>
+		</div>
+		
+<div class="row space"><div class="col"></div></div> <!--SPACERS-->
+<div class="row space"><div class="col"></div></div>
+<div class="row space"><div class="col"></div></div>
+<div class="row space"><div class="col"></div></div>
+
+		<div class='row'>
+			<div class='col'>
+				<img src="assets/toptext.png" class='img-fluid'>
+			</div>
+			<div class='col d-flex align-items-end'>
+				<button onclick="togglePopup()" class="btn" id='ob'>ЗАКАЗАТЬ</button>
+			</div>
+		</div>
+
+<div class="row space"><div class="col"></div></div>
+
+		<div class='row'>
+			<div class='col about'>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</h3>
-			<div>
-				<h3>Акция</h3>
-				<h2>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.
-				</h2>
 			</div>
-			<div>
-				<h3>Мероприятия</h3>
-				<h2>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.
-				</h2>
+			<div class='col'></div>
+		</div>
+		
+<div class="row space"><div class="col"></div></div>
+
+		<div class='row txt'>
+			<div class='col'>
+				<h1>Акции</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
 			</div>
-	</div>
+			<div class='col'>
+				<h1>Мероприятия</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</div>
+			<div class='col'>
+				<img src="assets/video.png">
+			</div>
+		</div>
+
+<div class="row space"><div class="col"></div></div>
+
+	</div>		
+</div>
+
 
 	<!-- POPUP -->
-	<div class="popup" id="popup-1">
-	    <div class="overlay"></div>
-	    <div class="content">
-			<div class='container2'>    
-		    	<div class="close-btn" onclick="togglePopup()">&times;</div>
-		    	<div><img class="logo2" src="assets/logo2.png" width="297" height="78"></div>
-		    	<div class="line"></div>
-		    	<h1>ЗАПОЛНИТЕ ПОЛЯ</h1>
-				<input class="popupholder" type="name" placeholder="Введите ваше имя" name="name-popup"/>
-				<input class="popupholder" type="phone" placeholder="Введите ваш номер телефона" name="phone-popup"/>
-				<button class="btn">Отправить заявку</button>
-				<h2>Оставьте заявку и мы свяжемся с вами в самые краткие сроки!</h2>
-			</div>
-	    </div>
-	</div>
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+		<div class='container2'>    
+	    	<div class="close-btn" onclick="togglePopup()">&times;</div>
+	    	<div><img class="logo2" src="assets/logo2.png" width="297" height="78"></div>
+	    	<div class="line"></div>
+	    	<h1>ЗАПОЛНИТЕ ПОЛЯ</h1>
+			<input class="popupholder" type="name" placeholder="Введите ваше имя" name="name-popup"/>
+			<input class="popupholder" type="phone" placeholder="Введите ваш номер телефона" name="phone-popup"/>
+			<button class="btn">Отправить заявку</button>s
+			<h2>Оставьте заявку и мы свяжемся с вами в самые краткие сроки!</h2>
+		</div>
+    </div>
+</div>
 
 	<!-- NAVBAR -->
-	<div class='container-fluid bg-light'>
-		<div class='container'>
-			<nav class="navbar navbar-expand-lg navbar-light">
-			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="navbar-toggler-icon"></span>
-			    </button>
+<div class='container-fluid bg-light'>
+	<div class='container'>
+		<nav class="navbar navbar-expand-lg navbar-light">
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		    </button>
 
-			    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
-			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
-				    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
-				    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
-				    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
-				    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
-				    </ul>
-			    </div>
-			</nav>
-		</div>
+		    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+			    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
+			    </ul>
+		    </div>
+		</nav>
 	</div>
+</div>
 
 <!-- Second Page -->
 <div class='container'>

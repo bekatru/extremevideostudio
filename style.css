@@ -207,7 +207,7 @@ h1.headers {
 }
 
 .lineheaders {
-  display: block;
+  display: inline-block;
   width: 595px;
   height: 2px;
   background-color: #e4a847;
@@ -352,7 +352,7 @@ button.playbutton:focus, :hover, :active {
   background-color: #f5f5f5;
 }
 
-h1.photo {
+h1.bg {
   display: flex;
   border-top: 50px;
   border-color: #f5f5f5;
@@ -405,4 +405,64 @@ img.clients {
   text-align: left;
   margin-top: 8px;
 
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: #84848a;
+  margin-bottom: 0px;
+  margin: 0px;
+  height: 20px;
+}
+
+.white.tags {
+  margin: 0;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.allcontacts {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  align-self: center;
+}
+
+.contact {
+  margin-bottom: 19px;
+}
+
+div.grid {
+  height: 543px;
+  display: grid;
+  grid-template-columns: 50px 540px auto;
+  grid-template-rows: 150px 70px 230px;
+}
+
+div.tea {
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+}
+
+.contacts {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.info {
+  display: grid;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 40px;
+  align-self: center;
+}
+
+.map {
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 3; 
 }

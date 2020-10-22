@@ -406,3 +406,77 @@ img.clients {
   margin-top: 8px;
 
 }
+
+
+
+/*FOOTER*/
+
+footer {
+  color: gray;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 300px auto;
+  align-content: center;
+}
+
+a.logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: block;
+  margin: auto;
+}
+
+
+ul.menu {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.trademarks {
+  font-size: 14px;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.sm {
+  width: 100px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+footer li a {
+  color: gray;
+}
+
+footer li a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+div.sep {
+  display: block;
+  height: 2px;
+  background-color: gray;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}

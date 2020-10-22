@@ -370,3 +370,39 @@ img.clients {
   margin-top: 40px;
   margin-bottom: 100px;
 }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.flex img {
+  margin: 15px 30px 15px 0px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.flex::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll {
+  border: none;
+  background: none;
+}
+
+.scroll:focus {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.3s;
+  transform: scale(0.8)
+}
+
+.portfolio h1 {
+  text-align: left;
+  margin-top: 8px;
+
+}

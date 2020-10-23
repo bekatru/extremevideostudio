@@ -5,15 +5,35 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;900&display=swap" rel="stylesheet">
-	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" type="text/css" href="style2.css">
+	    <link rel="stylesheet" type="text/css" href="popup.css">
+	    <link rel="stylesheet" type="text/css" href="buttons.css">
 	    <title>Extreme Video Studio</title>
 	</head>
 
 <body>
 
-	<!-- First Page -->
+	<!-- POPUP -->
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+		<div class='container2'>    
+	    	<div class="close-btn" onclick="togglePopup()">&times;</div>
+	    	<div><img class="logo2" src="assets/logo2.png" width="297" height="78"></div>
+	    	<div class="line"></div>
+	    	<h1>ЗАПОЛНИТЕ ПОЛЯ</h1>
+			<input class="popupholder" type="name" placeholder="Введите ваше имя" name="name-popup"/>
+			<input class="popupholder" type="phone" placeholder="Введите ваш номер телефона" name="phone-popup"/>
+			<button class="btn">Отправить заявку</button>s
+			<h2>Оставьте заявку и мы свяжемся с вами в самые краткие сроки!</h2>
+		</div>
+    </div>
+</div>
+
+	<!-- FIRST PAGE -->
 <div class='banner'>
 	<div class='container'>
+
 		<div class='row'>
 			<div class='col'>
 				<nav class="navbar navbar-expand-lg navbar-light">
@@ -34,24 +54,19 @@
 			</div>
 		</div>
 		
-<div class="row space"><div class="col"></div></div> <!--SPACERS-->
-<div class="row space"><div class="col"></div></div>
-<div class="row space"><div class="col"></div></div>
-<div class="row space"><div class="col"></div></div>
 
 		<div class='row'>
-			<div class='col'>
-				<img src="assets/toptext.png" class='img-fluid'>
+			<div class='col-6'>
+				<img src="assets/toptext.png" class="img-fluid">
 			</div>
-			<div class='col d-flex align-items-end'>
+			<div class='col-6'>
 				<button onclick="togglePopup()" class="btn" id='ob'>ЗАКАЗАТЬ</button>
 			</div>
 		</div>
 
-<div class="row space"><div class="col"></div></div>
 
 		<div class='row'>
-			<div class='col about'>
+			<div class='col-6'>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -59,25 +74,24 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class='col'></div>
+			<div class='col-6'></div>
 		</div>
-		
-<div class="row space"><div class="col"></div></div>
 
-		<div class='row txt'>
+		<div class='row'>
 			<div class='col'>
 				<h1>Акции</h1>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.
+				consequat.</p>
 			</div>
 			<div class='col'>
 				<h1>Мероприятия</h1>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.
+				consequat.</p>
+				
 			</div>
 			<div class='col'>
 				<img src="assets/video.png">
@@ -89,25 +103,8 @@
 	</div>		
 </div>
 
-	<!-- POPUP -->
-<div class="popup" id="popup-1">
-    <div class="overlay"></div>
-    <div class="content">
-		<div class='container2'>    
-	    	<div class="close-btn" onclick="togglePopup()">&times;</div>
-	    	<div><img class="logo2" src="assets/logo2.png" width="297" height="78"></div>
-	    	<div class="line"></div>
-	    	<h1>ЗАПОЛНИТЕ ПОЛЯ</h1>
-			<input class="popupholder" type="name" placeholder="Введите ваше имя" name="name-popup"/>
-			<input class="popupholder" type="phone" placeholder="Введите ваш номер телефона" name="phone-popup"/>
-			<button class="btn">Отправить заявку</button>s
-			<h2>Оставьте заявку и мы свяжемся с вами в самые краткие сроки!</h2>
-		</div>
-    </div>
-</div>
-
 	<!-- NAVBAR -->
-<div class='container-fluid bg-light'>
+<div class="bg-light">
 	<div class='container'>
 		<nav class="navbar navbar-expand-lg navbar-light">
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,24 +118,22 @@
 			    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
-			    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
 			    </ul>
 		    </div>
+		    <button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button>
 		</nav>
 	</div>
 </div>
 
 <!-- Second Page -->
-<div class='container'>
-	<h1 class="headers">УСЛУГИ</h1>
-</div>
-<div class="lineheaders"></div>
-<div class='container'>
-	<div class='container service'>
-		<div class='row uslugi'>
-			<div class="col text-left"><img class='uslugi1'src="assets/uslugi1.png"></div>
-			<div name="uslugi2" class="col text-center"><img src="assets/uslugi2.png"></div>
-			<div name="uslugi3" class="col text-right"><img src="assets/uslugi3.png">	</div>
+<div class='services'>
+	<div class="lineheaders"></div>
+	<div class='container'>
+		<h1 class="headers">УСЛУГИ</h1>
+		<div class='d-flex justify-content-between'>
+			<img src="assets/uslugi1.png">
+			<img src="assets/uslugi2.png">
+			<img src="assets/uslugi3.png">
 		</div>
 	</div>
 </div>
@@ -146,12 +141,12 @@
 <!-- Orange block -->
 <div class="orangeblock">
 	<div class="container">
-		<div class='row'>
-			<div class='col-8'>
+		<div class='row d-flex justify-content-between'>
+			<div class='col-auto'>
 				<h1>Расчитайте стоимость Вашей съёмки</h1>
 				<p>с точностью в 95% прямо сейчас</p>
 			</div>
-			<div class='col-4'>
+			<div class='col-auto'>
 				<button onclick="togglePopup()" class="btn-calc">РАСЧИТАТЬ СТОИМОСТЬ</button>
 			</div>
 		</div>
@@ -159,59 +154,52 @@
 </div>
   
   <!-- Third Page -->
-<div class='container'>
-	<h1 class="headers">О НАС</h1>
-</div>
-<div class="lineheaders"></div>
-<div class='container'>
-	<div class='about row'>
-		<div class='textabout col-8'>
-			<h1 class='extreme'>EXTREME VIDEO STUDIO</h1>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-
-			<p class="paragraph"> Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt. Donec facilisis neque eu augue semper laoreet. Sed purus turpis, semper a leo vitae, vehicula euismod lacus.</p>
-			<button class="btn about order">ЗАКАЗАТЬ</button>
-			<button class="btn about book">ПОРТФОЛИО</button>
-		</div>
-		<div class="col-4">
-			<img src="assets/video2.png" class="videopic">
-			<button class="playbutton"><img src="assets/playbutton.png"></button>
-		</div>
+<div class='about'>
+	<div class="lineheaders"></div>
+	<div class='container'>
+		<h1 class="headers">О НАС</h1>
+		<div class='row'>
+			<div class='col'>
+				<h1>EXTREME VIDEO STUDIO</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt. Lorem ipsum dolor sit amet.</p>
+				<p>Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt.</p>
+				<button class="btn about order">ЗАКАЗАТЬ</button>
+				<button class="btn about book">ПОРТФОЛИО</button>
+			</div>
+			<div class='col-auto'>
+				<img src="assets/video2.png">
+				<button class="playbutton"><img src="assets/playbutton.png"></button>
+			</div>
+		</div>	
 	</div>
 </div>
-  
-<!-- WHY US? -->
-<div class="whyus">
-	<div class='container'><h1 class="headers">ПОЧЕМУ МЫ?</h1></div>
-	<div class="lineheaders"></div>
-	<div class="row space"><div class="col"></div></div>
-	<div class="container">
-		<div class="row">
 
-			<div class="col text-left">
+<!-- WHY US? -->
+<div class="whyus bg-light">
+	<div class="lineheaders"></div>
+
+	<div class="container">
+		<h1 class="headers">ПОЧЕМУ МЫ?</h1>
+		<div class="row">
+			<div class="col">
 				<img src="assets/brain.png">
 				<h1>ОПЫТ</h1>
 				<p>Опыт работы в съемке видео с 2006 года. Мы "невидимы" в работе, при этом мы всегда в гуще событий.</p>
 			</div>
-
-			<div class="col text-left">
+			<div class="col">
 				<img src="assets/brain2.png">
 				<h1>СТИЛЬ</h1>
 				<p>Работа с нами это всегда творческий подход к любому событию заказщика.</p>
 			</div>
-
-			<div class="col text-left">
+			<div class="col">
 				<img src="assets/film.png">
 				<h1>ОБОРУДОВАНИЕ</h1>
 				<p>Профессиональный подход и качественное оборудование в руках у мастеров.</p>
 			</div>
-
 		</div>
 
-	<div class="row space"><div class="col"></div></div>
-		
 		<div class="row">
-			<div class="col text-left">
+			<div class="col">
 				<h1>EXTREME VIDEO STUDIO</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -221,22 +209,18 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
-
-	<div class="row space"><div class="col"></div></div>
-	<div class="row space"><div class="col"></div></div>		
-
 	</div>
 </div>
 
 <!-- Orange block -->
 <div class="orangeblock">
 	<div class="container">
-		<div class='row'>
-			<div class='col-8'>
+		<div class='row d-flex justify-content-between'>
+			<div class='col-auto'>
 				<h1>Есть вопросы?</h1>
 				<p>Оставьте заявку на обратную связь и мы перезвоним Вам в кратчайшие сроки!</p>
 			</div>
-			<div class='col-4'>
+			<div class='col-auto'>
 				<button onclick="togglePopup()" class="btn-calc">ОСТАВИТЬ ЗАЯВКУ</button>
 			</div>
 		</div>
@@ -245,13 +229,11 @@
 
 <!-- PORTFOLIO -->
 <div class="portfolio">
-
-	<div class='container'><h1 class="headers">НАШИ РАБОТЫ</h1></div>
 	<div class="lineheaders"></div>
-
-	<div class='container text-right'>
-		<button id="slideLeft" type="button" class='scroll'><img src="assets/btns/left.png"></button>
-    	<button id="slideRight" type="button" class='scroll'><img src="assets/btns/right.png"></button>
+	<div class='container'>
+		<h1 class="headers">НАШИ РАБОТЫ</h1>
+		<button id="slideLeft" class='scroll'><img src="assets/btns/left.png"></button>
+    	<button id="slideRight" class='scroll'><img src="assets/btns/right.png"></button>
 	</div>
 
 	<div class='container'>
@@ -273,7 +255,7 @@
 				<div><img src="assets/book5.png"></div>
 		</div>
 
-		<div class='row shit'>
+		<div class='row'>
 			<div class='col-3'>
 				<button class="btn about order">ЗАКАЗАТЬ</button>
 			</div>
@@ -290,93 +272,70 @@
 
 <!-- Fifth page -->
 <div class="equipment">
-	<div class='container'><h1 class="headers bg">ОБОРУДОВАНИЕ</h1></div>
 	<div class="lineheaders"></div>
 	<div class="container">
+		<h1 class="headers bg">ОБОРУДОВАНИЕ</h1>
 		<div class='row'>
 			<div class="col-4">
 				<img src="assets/camera1.png">	
 			</div>
-			<div class="col-8 cam">
-				<div class="camera">
-					<h1 class="headercam">КАМЕРА CANON 60D</h1>
-					<h6 class="sumcam">Входит в стоимость аренды</h6>
-					<p class="">Опыт работы в съемке видео с 2006 года. Мы "невидимы" в работе, при этом мы всегда в гуще событий.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-					nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-				 	mollit anim id est laborum.</p>
-				 </div>
+			<div class="col-8">
+					<h1>КАМЕРА CANON 60D</h1>
+					<h6>Входит в стоимость аренды</h6>
+					<p>Опыт работы в съемке видео с 2006 года. Canon EOS 60D оснащена 18-МП сенсором APS-C CMOS, процессором DIGIC 4, 9-точечной системой фокусировки и позволяет делать до 5,3 кадра в секунду в полном разрешении. Впервые в семействе EOS она обладает 3-дюймовым дисплеем Vari-Angle Clear View LCD, двигающимся в трех направлениях. Разрешение дисплея составляет 1,04 млн пикселей, он обладает антибликовым покрытием.</p>
 			</div>
 		</div>
-			<div>
-				<img src="assets/camera2.png">
-				<img src="assets/camera3.png">
-				<img src="assets/camera4.png">
-			</div>
+		<div class='row'>
+			<div class="col-4"><img src="assets/camera2.png"></div>
+			<div class="col-4"><img src="assets/camera3.png"></div>
+			<div class="col-4"><img src="assets/camera4.png"></div>
+		</div>
 	</div>
 </div>
 
 <!-- Orange block -->
-<div class="orangeblock">
-	<div class="container">
-		<div class='row'>
-			<div class='col-8'>
-				<h1>Есть вопросы?</h1>
-				<p>Оставьте заявку на обратную связь и мы перезвоним Вам в кратчайшие сроки!</p>
-			</div>
-			<div class='col-4'>
-				<button onclick="togglePopup()" class="btn-calc">ОСТАВИТЬ ЗАЯВКУ</button>
-			</div>
-		</div>
-	</div>
-</div>
+<div class="orangeblock"><div class='space'></div></div>
 
-<!-- Partners -->
- <div class="partners">
-	<div class='container'><h1 class="headers bg">НАШИ КЛИЕНТЫ</h1></div>
-	<div class="lineheaders"></div>
-	<div class="container partners">
-		<div class='row'>
-			<div class="row space"><div class="col"></div></div>
-			<img src="assets/logos.png" class="clients">
-		</div>
+<!-- CLIENTS -->
+<div class="partners">
+ 	<div class="lineheaders"></div>
+	<div class="container">
+		<h1 class="headers">НАШИ КЛИЕНТЫ</h1>
 	</div>
 </div>
 
 <!-- Contacts -->
-<div class="bg-dark">
-	<div class='grid container'>
-		<div class="contacts"><h1 class="headers bg white">КОНТАКТЫ</h1></div>
-			<div class='info'>
-				<t class="gray">У нас есть опыт организации съёмок в различных регионах России и заграницей.</t>
-				<t class="gray">Мы мобильны и готовы к выезду в любую точку мира.</t>
-			</div>
-				<img class="map" src="assets/map.png">
-			<div class='tea'>
-				<h2 class="white tags">T:</h2>
-				<h2 class="white tags">E:</h2>
-				<h2 class="white tags">A:</h2>
-			</div>
-				<div class='allcontacts'>
-					<div class="contact">
-						<p class="gray">+996 (777) 777-777</p>
-						<p class="gray">+996 (312) 777-777</p>
-					</div>
-					<div class="contact">
-						<p class="gray">EVS@gmail.com</p>
-						<p class="gray">info@evs.kg</p>
-					</div>
-					<div class="contact">
-						<p class="gray">Кыргызстан, 720000 г. Бишкек,</p>
-						<p class="gray">ул. Калык Акиева 66, БЦ Весна</p>
-				</div>
-			</div>
+<div class="contacts bg-dark">
+
+	<div class='container'>
+		<h1 class="headers">КОНТАКТЫ</h1>
+
+		<div class='info'>
+			<p>У нас есть опыт организации съёмок в различных регионах России и заграницей.</p>
+			<p>Мы мобильны и готовы к выезду в любую точку мира.</p>
+		</div>
+				
+			<h1 class='t'>T:</h1>
+			<h1 class='e'>E:</h1>
+			<h1 class='a'>A:</h1>
+
+		<div class="number">
+			<p>+996 (777) 777-777</p>
+			<p>+996 (312) 777-777</p>
+		</div>
+		<div class="email">
+			<p>EVS@gmail.com</p>
+			<p>info@evs.kg</p>
+		</div>
+		<div class="adress">
+			<p>Кыргызстан, 720000 г. Бишкек,</p>
+			<p>ул. Калык Акиева 66, БЦ Весна</p>
+		</div>
 	</div>
 </div>
 
 <!-- FOOTER -->
-<div class="bg-dark">
+<div class="footer">
 	<footer class='container'>
 	    <a href="#" class="logo"><img src="assets/logo3.png"></a>	
 	    <ul class="menu">

@@ -1,0 +1,69 @@
+/*POPUP*/
+.popup .overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,.7);
+	z-index:1;
+	display:none}
+
+div.content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0);
+	background:#fff;
+	width:436px;
+	height:642px;
+	z-index:2;
+	border-radius:20px;
+	margin:0}
+
+.popup .close-btn{
+	cursor:pointer;
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:30px;
+	height:30px;
+	color:#000;
+	font-size:25px;
+	font-weight:600;
+	line-height:30px;
+	text-align:center;
+	border-radius:50%}
+
+.popup.active .overlay{display:block}
+
+.popup.active .content{
+	transition:all .3s ease-in-out;
+	transform:translate(-50%,-50%) scale(1)}
+
+.popupholder{
+	padding:0;
+	margin:0;
+	width:auto;
+	height:60px;
+	border-radius:60px;
+	border-color:#ccc;
+	text-align:center;
+	border-style:solid}
+
+.popupholder:active,:focus,:hover{
+	outline:0;
+	outline-offset:0}
+
+div.container2{
+	padding:40px 40px;
+	display:inline-grid;
+	justify-content:center;
+	grid-row-gap:20px;
+	margin-top:40px;
+	height:602px}
+
+
+img.logo2{display:block;margin-left:auto;margin-right:auto;align-self:center}
+
+div.line{display:block;width:100%;height:2px;background-color:orange}

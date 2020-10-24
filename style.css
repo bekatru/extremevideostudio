@@ -1,13 +1,20 @@
 *{font-family:Jost,sans-serif}
 
 /*MISC*/
+ul{
+	text-decoration:none;
+	list-style-type:none}
+
 div.space{height:40px}
 
 .lineheaders{
 	display:inline-block;
-	width:595px;
+	width:400px;
 	height:2px;
-	background-color:#e4a847} 
+	background-color:#e4a847;
+	position: absolute;
+	left: 0;
+	} 
 
 /*TEXT*/
 h1{
@@ -23,7 +30,7 @@ h2{}
 	margin:70px 0;
 	font-weight:900}
 
-p{text-align: justify}
+p{text-align: justify;line-height: 1}
 
 /*BUTTONS*/
 .btn{
@@ -127,11 +134,75 @@ p{text-align: justify}
 
 /*BANNER*/
 .banner{
+	min-height: 100vh;
 	background-image:url('../assets/bg.png');
 	background-repeat:no-repeat;
 	background-size:inherit;
 	background-position:center;
 	text-align:justify}
+
+.callback{
+	display: grid;
+	justify-items: end;}
+
+.callback h1{
+	margin-right:0px;
+	font-size: 20px}
+
+.callback a{
+	font-size: 18px;
+	color: gray;
+	margin-right:0px}
+
+.callback a:hover{
+	color: #111;
+	text-decoration-color: #e4a847}
+
+.banner .img-fluid{margin-bottom: 50px}
+
+#about{max-width: 552px}
+
+.news{
+	background: rgba(211, 211, 211, 0.4);
+	margin-top:50px}
+
+.news .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center}
+
+.co{
+	min-width: 296px;
+	margin:auto auto;}
+
+.co h1{font-size: 18px; 
+	margin-bottom: 16px}
+.co p{margin-right: 30px}
+
+.sma li a{color:gray}
+
+
+
+.sma li a:hover{
+	color:#e4a847;
+	text-decoration:none}
+
+.row.sh{position: relative;}
+
+.sma{
+	box-sizing: border-box;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 200px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -100px;
+	top: 100px}
+
 
 /*NAVBAR*/
 nav.navbar.navbar-expand-lg.navbar-light{
@@ -312,10 +383,6 @@ a.logo{
 	display:inline-flex;
 	justify-content:space-between;
 	align-items:center}
-
-footer ul{
-	text-decoration:none;
-	list-style-type:none}
 
 footer li a{color:gray}
 

@@ -6,6 +6,7 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;900&display=swap" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" type="text/css" href="responsive.css">
 	    <title>Extreme Video Studio</title>
 	</head>
 
@@ -32,73 +33,74 @@
 <div class='banner'>
 	<div class='container'>
 
-		<div class='row'>
-			<div class='col'>
-				<nav class="navbar navbar-expand-lg navbar-light">
-				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    	<span class="navbar-toggler-icon"></span>
-				    </button>
-				    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
-				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					    <ul class="navbar-nav ml-auto">
-					    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
-					    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
-					    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
-					    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
-					    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
-					    </ul>
-				    </div>
-				</nav>
-			</div>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light">
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		    </button>
+		    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+			    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
+			    </ul>
+		    </div>
+		</nav>
 		
-
-		<div class='row'>
-			<div class='col-6'>
-				<img src="assets/toptext.png" class="img-fluid">
-			</div>
-			<div class='col-6'>
-				<button onclick="togglePopup()" class="btn book">ЗАКАЗАТЬ</button>
-			</div>
+		<div class='callback'>
+			<h1>(777) 999-999</h1>
+			<a href="#">обратный звонок</a>
 		</div>
 
+		<!-- <div class="lineheaders"></div> -->
+		<!-- <div class="space"></div> -->
 
-		<div class='row'>
-			<div class='col-6'>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<div class='row sh'>
+			<div class='col-lg'>
+				<img src="assets/toptext.png" class="img-fluid">
+				<p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				consequat.</p>
 			</div>
-			<div class='col-6'></div>
+			<div class='col-lg d-flex align-items-end'>
+				<button onclick="togglePopup()" class="btn book ">ЗАКАЗАТЬ</button>
+			</div>
+			<ul class="sma">
+	    		<li><a href="#">FB</a></li>
+	    		<li><a href="#">IN</a></li>
+	    		<li><a href="#">TW</a></li>
+	    		<li><a href="#">TG</a></li>
+		    </ul>
 		</div>
 
-		<div class='row'>
-			<div class='col'>
+	</div>
+
+
+	<div class='news'>
+		<div class='container'>
+			<div class='co'>
 				<h1>Акции</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 			</div>
-			<div class='col'>
+			<div class='co'>
 				<h1>Мероприятия</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
-				
 			</div>
-			<div class='col'>
+			<div class='co'>
 				<img src="assets/video.png">
 			</div>
-		</div>
+		</div>		
+	</div>
 
-<div class="row space"><div class="col"></div></div>
-
-	</div>		
 </div>
 
 <!-- NAVBAR -->
@@ -278,9 +280,9 @@
 				<img src="assets/camera1.png">	
 			</div>
 			<div class="col-8">
-					<h1>КАМЕРА CANON 60D</h1>
-					<h6>Входит в стоимость аренды</h6>
-					<p>Опыт работы в съемке видео с 2006 года. Canon EOS 60D оснащена 18-МП сенсором APS-C CMOS, процессором DIGIC 4, 9-точечной системой фокусировки и позволяет делать до 5,3 кадра в секунду в полном разрешении. Впервые в семействе EOS она обладает 3-дюймовым дисплеем Vari-Angle Clear View LCD, двигающимся в трех направлениях. Разрешение дисплея составляет 1,04 млн пикселей, он обладает антибликовым покрытием.</p>
+				<h1>КАМЕРА CANON 60D</h1>
+				<h6>Входит в стоимость аренды</h6>
+				<p>Опыт работы в съемке видео с 2006 года. Canon EOS 60D оснащена 18-МП сенсором APS-C CMOS, процессором DIGIC 4, 9-точечной системой фокусировки и позволяет делать до 5,3 кадра в секунду в полном разрешении. Впервые в семействе EOS она обладает 3-дюймовым дисплеем Vari-Angle Clear View LCD, двигающимся в трех направлениях. Разрешение дисплея составляет 1,04 млн пикселей, он обладает антибликовым покрытием.</p>
 			</div>
 		</div>
 		<div class='row'>

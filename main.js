@@ -1,5 +1,5 @@
 function togglePopup(){
-  document.getElementById("popup-1").classList.toggle("active");
+  document.getElementById("popup").classList.toggle("active");
 }
 
 const buttonRight = document.getElementById('slideRight');

@@ -16,10 +16,7 @@ h1{
 	margin:auto;
 	font-weight:600}
 
-/*h2{
-	font-size:16px;
-	margin:10px 65px 10px 65px;
-	text-align:center}*/
+h2{}
 
 .headers{
 	font-size:48px;
@@ -28,7 +25,7 @@ h1{
 
 p{text-align: justify}
 
-/*BUOTTONS*/
+/*BUTTONS*/
 .btn{
 	-webkit-border-radius:60;
 	-moz-border-radius:60;
@@ -59,7 +56,76 @@ p{text-align: justify}
 
 .btn.book:hover{background-color:#e4a847}
 
-/*FIRST PAGE*/
+/*POPUP*/
+.overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,.7);
+	z-index:1;
+	display:none}
+
+.content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0);
+	background:#fff;
+	width:450px;
+	height:650px;
+	z-index:2;
+	border-radius:20px}
+
+.popup.active .overlay{display:block}
+
+.popup.active .content{
+	transition:all .3s ease-in-out;
+	transform:translate(-50%,-50%) scale(1)}
+
+.popup .container{
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(auto, 8);
+	justify-items: stretch;
+	align-items: center}
+
+.close-btn{
+	width:30px;
+	height:30px;
+	align-self: center;
+	justify-self: end;}
+
+.popup .logo{
+	align-self: center;
+	margin:auto}
+
+.line{
+	display:block;
+	width:100%;
+	height:2px;
+	background-color:#e4a847;
+	margin: auto;}
+
+.popupholder{
+	height:55px;
+	border-radius:60px;
+	border-color:#e4a847;
+	border-style:solid;
+	text-align: center}
+
+.popupholder:active,:focus,:hover{
+	outline:0;
+	outline-offset:0}
+
+.popup .btn{
+	width: auto;
+	margin:0;}
+
+.popup p{margin:0px 100px}
+
+/*BANNER*/
 .banner{
 	background-image:url('../assets/bg.png');
 	background-repeat:no-repeat;
@@ -138,7 +204,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
 	transition:.3s;
 	transform:scale(.8)}
 
-/*GEAR*/
+/*EQUIPMENT*/
 .equipment{background-color:#f5f5f5}
 
 .equipment .col-8{

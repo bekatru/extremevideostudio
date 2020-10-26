@@ -43,6 +43,7 @@ p{text-align: justify;line-height: 1}
   right: 0;
 }
 
+
 /*BUTTONS*/
 .btn{
 	-webkit-border-radius:60;
@@ -52,8 +53,6 @@ p{text-align: justify;line-height: 1}
 	background:#e4a847;
 	text-decoration:none;
 	padding:15px 0px;
-	margin-top:15px;
-	margin-bottom:15px;
 	width: 255px;}
 
 .btn.calc{
@@ -145,12 +144,12 @@ p{text-align: justify;line-height: 1}
 
 /*BANNER*/
 .banner{
-	min-height: 100vh;
+	height: 100vh;
 	background-image:url('../assets/bg.png');
 	background-repeat:no-repeat;
 	background-size:inherit;
 	background-position:center;
-	text-align:justify}
+	text-align:justify;}
 
 .callback{
 	display: grid;
@@ -169,14 +168,28 @@ p{text-align: justify;line-height: 1}
 	color: #111;
 	text-decoration-color: #e4a847}
 
-.banner .img-fluid{margin-bottom: 50px}
+.banner .underlined:before{top: 0;right: 50%}
+
+.banner .img-fluid{margin: 50px 0}
 
 #about{max-width: 552px}
 
 .news{
-	background: rgba(211, 211, 211, 0.4);
-	margin-top:50px;
-	margin-bottom: 50px}
+	overflow-x: hidden}
+
+.back {position: relative}
+
+.news .back:after{
+	display: block;
+	content: "";
+	background: rgba(211, 211, 211, 0.2);	
+	position: absolute;
+	right:15px;
+	z-index: 0;
+	width: 2000px;
+	height: 100%;
+
+	}
 
 .news .container{
 	display: flex;
@@ -192,33 +205,8 @@ p{text-align: justify;line-height: 1}
 	margin-bottom: 16px}
 .co p{margin-right: 30px}
 
-.sma li a{color:gray}
-
-
-
-.sma li a:hover{
-	color:#e4a847;
-	text-decoration:none}
-
-.row.sh{position: relative;}
-
-.sma{
-	box-sizing: border-box;
-	display: inline-flex;
-	justify-content: space-between;
-	width: 204px;
-	height: 30px;
-	margin: 0;
-	padding: 0;
-	transform: rotate(-90deg);
-	position: absolute;
-	left: -105px;
-	top: 88px}
-
 #next{
-	transform: rotate(90deg);
-}
-
+	transform: rotate(90deg)}
 
 /*NAVBAR*/
 nav.navbar.navbar-expand-lg.navbar-light{

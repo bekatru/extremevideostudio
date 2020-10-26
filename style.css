@@ -164,7 +164,8 @@ p{text-align: justify;line-height: 1}
 
 .news{
 	background: rgba(211, 211, 211, 0.4);
-	margin-top:50px}
+	margin-top:50px;
+	margin-bottom: 50px}
 
 .news .container{
 	display: flex;
@@ -194,14 +195,18 @@ p{text-align: justify;line-height: 1}
 	box-sizing: border-box;
 	display: inline-flex;
 	justify-content: space-between;
-	width: 200px;
+	width: 204px;
 	height: 30px;
 	margin: 0;
 	padding: 0;
 	transform: rotate(-90deg);
 	position: absolute;
-	left: -100px;
-	top: 100px}
+	left: -105px;
+	top: 88px}
+
+#next{
+	transform: rotate(90deg);
+}
 
 
 /*NAVBAR*/

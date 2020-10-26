@@ -406,3 +406,30 @@ footer li a{color:gray}
 footer li a:hover{
 	color:#fff;
 	text-decoration:none}
+
+/*REVIEWS*/
+
+.review {
+  min-width: 640px;
+  display: grid;
+  grid-template-columns: 230px auto;
+  grid-template-rows: 150px 25px 25px;
+}
+
+.review img{grid-row:1 4;}
+
+.review h5 {
+  grid-row: 1 2;
+  grid-column: 2 3;
+  display: flex;
+  align-self: center;
+}
+
+.review h6{
+  grid-row: 2; 
+  grid-column: 2}
+
+.review p{
+  grid-row: 3;
+  grid-column: 2}
+

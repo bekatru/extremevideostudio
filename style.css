@@ -7,21 +7,12 @@ ul{
 
 div.space{height:40px}
 
-.lineheaders{
-	display:inline-block;
-	width:400px;
-	height:2px;
-	background-color:#e4a847;
-	position: absolute;
-	left: 0;
-	} 
-
 /*TEXT*/
 h1{
 	font-size:25px;
 	text-align:left;
 	margin:auto;
-	font-weight:600}
+	font-weight:600;}
 
 h2{}
 
@@ -30,7 +21,27 @@ h2{}
 	margin:70px 0;
 	font-weight:900}
 
+
 p{text-align: justify;line-height: 1}
+
+/*UNDERLINED HEADER*/
+
+.underlined {
+  position: relative;
+}
+
+.underlined:before {
+  display: block;
+  content: "";
+  background: #e4a847;
+
+  width: 1000px;
+  height: 2px;
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 /*BUTTONS*/
 .btn{
@@ -296,11 +307,12 @@ h6{color:#e4a847}
 }
 
 /*CONTACTS*/
-.contacts .container{
+
+.contacts .container {
 	height:543px;
 	display:grid;
 	grid-template-columns:50px auto;
-	grid-template-rows:150px repeat(4, 70px)
+	grid-template-rows: 150px repeat(4, 70px)
 }
 
 .contacts p{

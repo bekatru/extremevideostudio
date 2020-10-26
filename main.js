@@ -1,3 +1,16 @@
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navigations");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 function togglePopup(){
   document.getElementById("popup").classList.toggle("active");
 }
@@ -12,9 +25,3 @@ buttonLeft.onclick = function () {
   document.getElementById('overflow').scrollLeft -= 350;
 };
 
-$(document).ready(function(){
-  $('.single-item').slick({
-    prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/btns/left.png'>",
-    nextArrow:"<img class='a-right control-c next slick-next' src='assets/btns/right.png'>"
-  });
-});

@@ -24,4 +24,3 @@ buttonRight.onclick = function () {
 buttonLeft.onclick = function () {
   document.getElementById('overflow').scrollLeft -= 350;
 };
-

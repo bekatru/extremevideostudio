@@ -11,7 +11,6 @@ div.space{height:40px}
 h1{
 	font-size:25px;
 	text-align:left;
-	margin:auto;
 	font-weight:600;}
 
 h2{}
@@ -229,11 +228,22 @@ nav.navbar.navbar-expand-lg.navbar-light{
 /*ORANGE BLOCK*/
 .orangeblock{
 	height:auto;
+  min-height: 136px;
 	background-color:#e4a847;
 	color:#fff}
 
-.orangeblock .col-auto{
-	padding: 30px 15px}
+.orangeblock .col-auto.head{
+	padding: 0 15px 0 15px}
+
+.orange {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col-auto.orange {
+  padding: 40px 0 40px 0;
+}
 
 /*ABOUT*/
 .about p{text-align: justify}
@@ -247,8 +257,33 @@ nav.navbar.navbar-expand-lg.navbar-light{
 	border-radius:150px;
 	background-color:rgba(255,0,0,0)}
 
+
 /*WHY US?*/
-.whyus{}
+
+.whyus .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 70px 30px; 
+}
+
+.whyus .col h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.whyus .headers {
+  padding-top: 70px;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.whyus .col p {
+  text-align: center;
+  color:gray;
+}
+
 
 /*PORTFOLIO*/
 .flex{
@@ -415,3 +450,7 @@ footer li a:hover{
   grid-row: 3;
   grid-column: 2}
 
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}

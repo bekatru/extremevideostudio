@@ -6,5 +6,39 @@
 	.orangeblock .row{flex-direction: column; align-items: center;}
 	.orangeblock h1{padding-top: 40px; text-align: center;}
 	.orangeblock p{text-align: center;}
+}
 
+@media only screen and (max-width: 425px) {
+	.about-video{display: block;}
+	.hide{display: none}
+}
+
+@media only screen and (max-width: 425px) {
+	
+	h1{font-size: 24px}
+	.headers{font-size: 36px}
+
+	/*ABOUT*/
+	.thumbnail{
+		height: 68px;
+		margin-top: 50px}
+
+	.playbtn.mobile{
+		right: 130px}
+
+	.btn{width: 100%}
+
+}
+
+@media only screen and (max-width: 375px) {
+	
+	h1{font-size: 24px}
+	.headers{font-size: 30px}
+	
+	.thumbnail{
+		height: 55px;
+		margin-top: 55px}
+
+	.playbtn.mobile{
+		right: 90px}
 }

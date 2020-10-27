@@ -7,8 +7,6 @@
 	    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;900&display=swap" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="style.css">
 	    <link rel="stylesheet" type="text/css" href="responsive.css">
-	    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
 	    <title>Extreme Video Studio</title>
 	</head>
 
@@ -30,37 +28,33 @@
 		</div>
     </div>
 </div>
+ 
+ <div></div>
 
 <!-- BANNER -->
-<div class='banner'>
-	<div class='container-md'>
+<header class='banner'>
+	<div class='container-sm'>
 
 		<nav class="navbar navbar-expand-lg navbar-light">
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		    </button>
-		    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
+		    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="56" height="60"></a>
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
-			    	<li class="nav-item"><button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button></li>
 			    </ul>
+			    <button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
 		    </div>
+		    
 		</nav>
-
-		
-		<div class='callback'>
-			<h1>(777) 999-999</h1>
-			<a href="#">обратный звонок</a>	
-		</div>
 
 		<div class='row'>
 			<span class="col-lg underlined">
 					<img src="assets/toptext.png" class="img-fluid">
-					
 					<p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -73,45 +67,42 @@
 
 	</div>
 
-
-	<div class='news'>
-		<span class='back container'>
+<!-- 
+	<div class='news'> 
+		<div class='back container'>
 			<div class='co'>
-				<h1>Акции</h1>
+				<h5>Акции</h5>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 			</div>
 			<div class='co'>
-				<h1>Мероприятия</h1>
+				<h5>Мероприятия</h5>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 			</div>
-			<div class='co'>
-				<img src="assets/video.png">
-			</div>
-		</span>		
+			<img src="assets/video.png">
+		</div>		
+	</div> -->
+
+	<div class="flex-grow-1 d-flex justify-content-center align-items-center">
+		<img src="assets/btns/right.png" width="30" height="30" id="next">
 	</div>
 
-	<div class="d-flex justify-content-center">
-		<img src="assets/btns/right.png" id="next">
-	</div>
-	
+</header>
 
-</div>
 
 <!-- NAVBAR -->
-<div class="bg-light">
+<div class="bg-light"  id="navigations">
 	<div class='container'>
 		<nav class="navbar navbar-expand-lg navbar-light">
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		    </button>
-
-		    <a class="navbar-brand" href="#"><img src="assets/logo.png"  alt=""></a>
+		    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="56" height="60"></a>
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
@@ -120,21 +111,22 @@
 			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
 			    </ul>
 		    </div>
-		    <button onclick="togglePopup()" class="btn">ОСТАВИТЬ ЗАЯВКУ</button>
+		    <button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
 		</nav>
 	</div>
 </div>
 
 
+
 <!-- SERVICES -->
 <div class='services'>
 	<div class='container'>
-			<h1 class="headers"><span class="underlined">УСЛУГИ</span></h1>
-			<div class='d-flex justify-content-between'>
-				<img src="assets/uslugi1.png">
-				<img src="assets/uslugi2.png">
-				<img src="assets/uslugi3.png">
-			</div>
+		<h1 class="headers"><span class="underlined">УСЛУГИ</span></h1>
+		<div class='d-flex justify-content-between'>
+			<div><img src="assets/uslugi1.png" class="img-fluid"></div>
+			<div><img src="assets/uslugi2.png" class="img-fluid"></div>
+			<div><img src="assets/uslugi3.png" class="img-fluid"></div>
+		</div>
 	</div>
 </div>
 
@@ -152,8 +144,10 @@
 		</div>
 	</div>
 </div>
-  
-<!-- ABOUT -->
+
+
+<!--   
+ABOUT
 <div class='about'>
 	<div class='container'>
 		<h1 class="headers"><span class="underlined">О НАС</span></h1>
@@ -173,7 +167,8 @@
 	</div>
 </div>
 
-<!-- WHY US? -->
+
+WHY US?
 <div class="whyus bg-light">
 
 	<div class="container">
@@ -210,7 +205,7 @@
 	</div>
 </div>
 
-<!-- ORANGE BLOCK -->
+ORANGE BLOCK
 <div class="orangeblock">
 	<div class="container">
 		<div class='row d-flex justify-content-between'>
@@ -225,7 +220,7 @@
 	</div>
 </div>
 
-<!-- PORTFOLIO -->
+PORTFOLIO
 <div class="portfolio">
 	<div class='container'>
 		<h1 class="headers"><span class="underlined">НАШИ РАБОТЫ</span></h1>
@@ -267,7 +262,7 @@
 	</div>
 </div>
 
-<!-- EQUIPMENT -->
+EQUIPMENT
 <div class="equipment">
 	<div class="container">
 		<h1 class="headers bg"><span class="underlined">ОБОРУДОВАНИЕ</span></h1>
@@ -289,10 +284,10 @@
 	</div>
 </div>
 
-<!-- ORANGE BLOCK -->
+ORANGE BLOCK
 <div class="orangeblock"><div class='space'></div></div>
 
-<!-- REVIEWS -->
+REVIEWS
 
 <div class="review">
 	<img src="assets/review1.jpeg" height="200px" width="200px">
@@ -301,7 +296,7 @@
 	<p>SEO MYACTION</p>
 </div>
 
-<!-- CONTACTS -->
+CONTACTS
 <div class="contacts bg-dark">
 	<div class='container'>
 		<h1 class="headers"><span class="underlined">КОНТАКТЫ</span></h1>
@@ -329,7 +324,7 @@
 	</div>
 </div>
 
-<!-- FOOTER -->
+FOOTER
 <div class="footer">
 	<footer class='container'>
 	    <a href="#" class="logo"><img src="assets/logo3.png"></a>	
@@ -352,13 +347,11 @@
 	    		<li><a href="#">TG</a></li>
 	    	</ul>
 	    </ul>
-	</footer>
-</div>
+	</footer> -->
 
 	<!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

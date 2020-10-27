@@ -164,7 +164,7 @@ p{text-align: justify;line-height: 1}
 #next{
   transform: rotate(90deg)}
 
-/*.news{
+.news{
   margin-top:10vh;
 	overflow: hidden}
 
@@ -187,7 +187,7 @@ p{text-align: justify;line-height: 1}
 
 .co{
 	width: 296px;
-	margin:auto 0;}*/
+	margin:auto 0;}
 
 /*NAVBAR*/
 nav.navbar.navbar-expand-lg.navbar-light{
@@ -252,7 +252,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
 	display: none}
 
 .thumbnail{
-	position: absolute;
+	position: relative;
 	right: 0;
 	top: 0}
 
@@ -272,7 +272,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
 .playbtn.mobile{
 	position: relative;
-	z-index: 100;
+	z-index: 50;
 	top: 5px}
 
 
@@ -467,8 +467,3 @@ footer li a:hover{
 .review p{
   grid-row: 3;
   grid-column: 2}
-
-.carousel-inner {
-  display: flex;
-  justify-content: center;
-}

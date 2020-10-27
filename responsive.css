@@ -8,7 +8,7 @@
 	.orangeblock p{text-align: center;}
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
 	.about-video{display: block;}
 	.hide{display: none}
 }

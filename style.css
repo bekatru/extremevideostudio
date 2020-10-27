@@ -11,7 +11,6 @@ div.space{height:40px}
 h1{
 	font-size:25px;
 	text-align:left;
-	margin:auto;
 	font-weight:600;}
 
 h2{}
@@ -53,7 +52,7 @@ p{text-align: justify;line-height: 1}
 	background:#e4a847;
 	text-decoration:none;
 	padding:15px 0px;
-	width: 255px;}
+	width: 250px;}
 
 .btn.calc{
 	border-style:solid;
@@ -236,16 +235,34 @@ nav.navbar.navbar-expand-lg.navbar-light{
 	padding: 30px 15px}
 
 /*ABOUT*/
-.about p{text-align: justify}
 
-:active,:hover,button.playbutton:focus{outline:0}
+.about-video{
+	margin: auto 0;
+	display: none}
 
-.playbutton{
-	border:none;
-	position:absolute;
-	top:358px;left:280px;
-	border-radius:150px;
-	background-color:rgba(255,0,0,0)}
+.thumbnail{
+	position: absolute;
+	right: 0;
+	top: 0}
+
+.playbtn{
+	padding: 0;
+	border-radius: 28px;
+	background: none;
+	outline: none;
+	border: none}
+
+.playbtn:hover{
+	background: #e4a847;
+	transition: 0.2s}
+
+.playbtn:focus{
+	outline: none}
+
+.playbtn.mobile{
+	position: relative;
+	z-index: 100;
+	top: 5px}
 
 /*WHY US?*/
 .whyus{}

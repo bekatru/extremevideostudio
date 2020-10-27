@@ -1,3 +1,40 @@
 @media only screen and (max-width: 640px) {
 	.callback{display: none}
 }
+
+@media only screen and (max-width: 425px) {
+	.about-video{display: block;}
+	.hide{display: none}
+}
+
+@media only screen and (max-width: 425px) {
+	
+	h1{font-size: 24px}
+	.headers{font-size: 36px}
+
+	/*ABOUT*/
+	.thumbnail{
+		height: 68px;
+		margin-top: 50px}
+
+	.playbtn.mobile{
+		right: 130px}
+
+	.btn{width: 100%}
+
+}
+
+@media only screen and (max-width: 375px) {
+	
+	h1{font-size: 24px}
+	.headers{font-size: 30px}
+	
+	.thumbnail{
+		height: 55px;
+		margin-top: 55px}
+
+	.playbtn.mobile{
+		right: 90px}
+}
+
+

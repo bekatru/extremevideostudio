@@ -4,7 +4,8 @@
   "description": "Landing page",
   "main": "main.js",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "swiper": "^6.3.4"
   },
   "devDependencies": {},
   "scripts": {

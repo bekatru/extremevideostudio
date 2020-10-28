@@ -66,9 +66,8 @@
 		</div>
 
 	</div>
-
-
- 	<div class='news'> 
+  
+	<div class='news'> 
 		<div class='back container'>
 			<div class='co'>
 				<h5>Акции</h5>
@@ -109,9 +108,10 @@
 			    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
 			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+			  	    <button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
 			    </ul>
 		    </div>
-		    <button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
+		    
 		</nav>
 	</div>
 </div>
@@ -190,11 +190,11 @@
 			<p>Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt.</p>
 			<div class="d-flex flex-row justify-content-between">
 				<button class="btn">ЗАКАЗАТЬ</button>
-				<button class="btn book hide">ПОРТФОЛИО</button>
+				<button class="btn book">ПОРТФОЛИО</button>
 				<button class="playbtn hide"><img src="assets/btns/multimedia.svg" height="56"></button>
 			</div>
 		</div>
-		<img src="assets/video2.png" class="hide">	
+		<img src="assets/video2.png" class="hide" height="100%" width="auto">	
 	</div>	
 </div>
 
@@ -267,15 +267,14 @@
 				<div><img src="assets/book5.png"></div>
 		</div>
 		<div class='row'>
-			<div class='col-3'>
+			<div class='col-auto'>
 				<button class="btn">ЗАКАЗАТЬ</button>
 			</div>
-			<div class='col-9'>
+			<div class='col'>
 				<h1>Есть вопросы?</h1>
 				<p>Оставьте заявку на обратную связь и мы перезвоним Вам в кратчайшие сроки!</p>
 			</div>
 		</div>
-	<div class="row space"><div class="col"></div></div>
 	</div>
 </div>
 
@@ -305,7 +304,6 @@
 <div class="orangeblock"><div class='space'></div></div>
 
 <!-- REVIEWS -->
-
 <div class="review">
 <div class="container">
 	<h1 class="headers"><span class="underlined">ОТЗЫВЫ</span></h1>
@@ -357,55 +355,73 @@
     });
 </script>
 
-<!-- CONTACTS -->
-<div class="contacts bg-dark">
-	<div class='container'>
-		<h1 class="headers"><span class="underlined">КОНТАКТЫ</span></h1>
-		<div class='info'>
-			<p>У нас есть опыт организации съёмок в различных регионах России и заграницей.</p>
-			<p>Мы мобильны и готовы к выезду в любую точку мира.</p>
-		</div>
-				
-			<h1 class='t'>T:</h1>
-			<h1 class='e'>E:</h1>
-			<h1 class='a'>A:</h1>
-		<div class="number">
-			<p>+996 (777) 777-777</p>
-			<p>+996 (312) 777-777</p>
-		</div>
-		<div class="email">
-			<p>EVS@gmail.com</p>
-			<p>info@evs.kg</p>
-		</div>
-		<div class="adress">
-			<p>Кыргызстан, 720000 г. Бишкек,</p>
-			<p>ул. Калык Акиева 66, БЦ Весна</p>
+	<!-- CONTACTS -->
+	<div class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="contacts col-md">
+					<h1 class="headers"><span class="underlined">КОНТАКТЫ</span></h1>
+					<div class='info'>
+						<p>У нас есть опыт организации съёмок в различных регионах России и заграницей.</p>
+						<p>Мы мобильны и готовы к выезду в любую точку мира.</p>
+					</div>
+					<div class='grid'>			
+							<h1>T:</h1>
+							<h1>E:</h1>
+							<h1>A:</h1>
+						<div class="number cont">
+							<p>+996 (777) 777-777</p>
+							<p>+996 (312) 777-777</p>
+						</div>
+						<div class="email cont">
+							<p>EVS@gmail.com</p>
+							<p>info@evs.kg</p>
+						</div>
+						<div class="adress cont">
+							<p>Кыргызстан, 720000 г. Бишкек,</p>
+							<p>ул. Калык Акиева 66, БЦ Весна</p>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md">
+					<div class="map">
+						<iframe src="https://maps.google.com/maps?q=%D1%83%D0%BB.%20%D0%9A%D0%B0%D0%BB%D1%8B%D0%BA%20%D0%90%D0%BA%D0%B8%D0%B5%D0%B2%D0%B0%2066%2C%20%D0%91%D0%A6%20%D0%92%D0%B5%D1%81%D0%BD%D0%B0&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<!-- FOOTER -->
-<div class="footer">
-	<footer class='container'>
-	    <a href="#" class="logo"><img src="assets/logo3.png"></a>	
-	    <ul class="menu">
-	    	<li><a href="#">О НАС</a></li>
-	    	<li><a href="#">УСЛУГИ</a></li>
-	    	<li><a href="#">ПРЕИМУЩЕСТВА</a></li>
-	    	<li><a href="#">ПОРТФОЛИО</a></li>
-	    	<li><a href="#">КАЛЬКУЛЯТОР</a></li>
-	    	<li><a href="#">КОНТАКТЫ</a></li>
-	    </ul>
-	    <div class="sep"></div>
-	    <ul class='trademarks'>
+	<!-- FOOTER -->
+	<footer >
+		<div class='container'>
+			<div class="top">
+				<a href="#" class="bw-logo"><img src="assets/logo3.png"></a>
+				<ul class="smm">
+					<li><a href="#">FB</a></li>
+					<li><a href="#">IN</a></li>
+					<li><a href="#">TW</a></li>
+					<li><a href="#">TG</a></li>
+				</ul>
+			</div>
+			<div class="bottom">
+			    <ul class="menu">
+			    	<li><a href="#">О НАС</a></li>
+			    	<li><a href="#">УСЛУГИ</a></li>
+			    	<li><a href="#">ПРЕИМУЩЕСТВА</a></li>
+			    	<li><a href="#">ПОРТФОЛИО</a></li>
+			    	<li><a href="#">КАЛЬКУЛЯТОР</a></li>
+			    	<li><a href="#">КОНТАКТЫ</a></li>
+			    </ul>
+			    <ul class='trademarks'>
+			    	<li>©ExtremeVideoStudio 2020 | ВСЕ ПРАВА ЗАЩИЩЕНЫ</li>
+			    	<li>Дизайн: BLACKBIRDSTUDIO</li>
+			    </ul>
+			</div>   
+		</div>
+		<ul class='trademarks mobile'>
 	    	<li>©ExtremeVideoStudio 2020 | ВСЕ ПРАВА ЗАЩИЩЕНЫ</li>
 	    	<li>Дизайн: BLACKBIRDSTUDIO</li>
-	    	<ul class="sm">
-	    		<li><a href="#">FB</a></li>
-	    		<li><a href="#">IN</a></li>
-	    		<li><a href="#">TW</a></li>
-	    		<li><a href="#">TG</a></li>
-	    	</ul>
 	    </ul>
 	</footer>
 

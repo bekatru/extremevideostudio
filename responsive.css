@@ -8,36 +8,14 @@
 	.orangeblock p{text-align: center;}
 }
 
-@media only screen and (max-width: 425px) {
+/*TABLETS*/
+@media only screen and (max-width: 768px) {
+	
 	.about-video{display: block;}
 	.hide{display: none}
-}
-
-@media only screen and (max-width: 425px) {
-	
-	h1{font-size: 24px}
-	.headers{font-size: 36px}
-
-	/*ABOUT*/
-	.thumbnail{
-		height: 68px;
-		margin-top: 50px}
-
-	.playbtn.mobile{
-		right: 130px}
-
-	.btn{width: 100%}
-
-}
-
-@media only screen and (max-width: 766px) {
-	
-
-
-/*REVIEWS*/
-
-@media only screen and (max-width: 766px) {
-	.review img {
+  
+  /*REVIEWS*/
+  	.review img {
 		height: 80px;
 		width: 80px;
 		grid-column: 1;
@@ -74,3 +52,47 @@
 	div.swiper-button-prev,
 	div.swiper-button-next {
 		display: none;}
+
+	/*FOOTER*/
+	footer .container{flex-direction: column;height: 280px}
+	.top{flex-direction: column;margin-top: 30px}
+	.smm{flex-direction: row;margin-top: 15px}
+	.smm li{transform: rotate(0)}
+	.trademarks li{font-size: 12px}
+
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 425px) {
+	
+	h1{font-size: 24px}
+	.headers{font-size: 36px}
+
+	/*ABOUT*/
+	.thumbnail{
+		height: 68px;
+		margin-top: 50px}
+
+	.playbtn.mobile{
+		right: 130px}
+
+	.btn{width: 100%}
+
+	/*FOOTER*/
+	footer .container{
+		flex-direction: row;
+		justify-content: space-between}
+	.top{
+		justify-content: space-between;
+		width: 50%;height: 200px}
+	.smm{margin: 0}
+	.bottom{
+		height: 200px;margin-top: 30px;
+		justify-content: space-between}
+	.bottom ul{flex-direction: column;text-align: right}
+	.menu{height: 100%}
+	.trademarks li{display:none}
+	.trademarks.mobile li{display:block}
+
+	
+}

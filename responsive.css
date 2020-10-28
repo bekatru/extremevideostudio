@@ -13,6 +13,45 @@
 	
 	.about-video{display: block;}
 	.hide{display: none}
+  
+  /*REVIEWS*/
+  	.review img {
+		height: 80px;
+		width: 80px;
+		grid-column: 1;
+		grid-row: 1;
+		margin: auto;}
+	
+	.review h5 {
+		grid-row: 2;
+		text-align: center;}
+
+	.swiper-slide.s1 {
+	    display: grid;
+	    grid-template-columns: auto;
+	    grid-template-rows: 100px auto 30px 30px;}
+	
+	.review p {
+		grid-column: 1;
+		text-align: center;
+		align-self: center;
+		margin: 0;
+		grid-row: 4;}
+
+	.review h6 {
+		grid-column: 1;
+		text-align: center;
+		align-self: flex-end;
+		margin: 0;
+		grid-row: 3;}
+
+	.review h1 {
+		margin-bottom: 40px;
+		margin-top: 40px;}
+
+	div.swiper-button-prev,
+	div.swiper-button-next {
+		display: none;}
 
 	/*FOOTER*/
 	footer .container{flex-direction: column;height: 280px}
@@ -56,19 +95,4 @@
 	.trademarks.mobile li{display:block}
 
 	
-}
-
-
-
-@media only screen and (max-width: 375px) {
-	
-	h1{font-size: 24px}
-	.headers{font-size: 30px}
-	
-	.thumbnail{
-		height: 55px;
-		margin-top: 55px}
-
-	.playbtn.mobile{
-		right: 90px}
 }

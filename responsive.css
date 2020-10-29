@@ -60,6 +60,10 @@
 	.smm li{transform: rotate(0)}
 	.trademarks li{font-size: 12px}
 
+	/*EQUIPMENT*/
+	.s3{flex-direction: column;}
+	.s3 img{width: 80%;margin:auto}
+
 }
 
 /*MOBILE*/
@@ -94,5 +98,9 @@
 	.trademarks li{display:none}
 	.trademarks.mobile li{display:block}
 
-	
+
+}
+
+@media only screen and (max-width: 320px) {
+	.headers{font-size: 30px}
 }

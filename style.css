@@ -264,32 +264,37 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
 /*ABOUT*/
 .about-video{
-	margin: auto 0;
-	display: none}
-
-.thumbnail{
 	position: relative;
-	right: 0;
-	top: 0}
+	margin: auto 0;
+	display: none
+}
 
 .playbtn{
 	padding: 0;
-	border-radius: 28px;
 	background: none;
 	outline: none;
-	border: none}
+	border: none;
+	transform: scale(1);
+	transition: 0.2s}
 
 .playbtn:hover{
-	background: #e4a847;
+	transform: scale(1.1);
 	transition: 0.2s}
 
 .playbtn:focus{
 	outline: none}
 
+.thumbnail{height: 74px;position: relative;bottom: 14px}
+
+.playbtn img{border-radius: 40px;height:74px }
 .playbtn.mobile{
-	position: relative;
-	z-index: 50;
-	top: 5px}
+	width: auto;
+	position: absolute;
+	z-index: 3;
+	left:-5px;bottom: 3px}
+
+.temp{position: relative;}
+.temp .playbtn{position: absolute;top:0;left:0}
 
 /*WHY US?*/
 .whyus .col {
@@ -382,13 +387,7 @@ nav.navbar.navbar-expand-lg.navbar-light{
 
 .swiper-slide-thumb-active {opacity: 50%}
 
-
-
-/*CLIENTS*/
-
-
 /*CONTACTS*/
-
 .contacts{color: white;}
 
 .contacts p{margin: 0;color: gray}

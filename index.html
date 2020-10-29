@@ -245,28 +245,33 @@
 <!-- PORTFOLIO -->
 <div class="portfolio">
 	<div class='container'>
-		<h1 class="headers"><span class="underlined">НАШИ РАБОТЫ</span></h1>
-		<button id="slideLeft" class='scroll'><img src="assets/btns/left.png"></button>
-    	<button id="slideRight" class='scroll'><img src="assets/btns/right.png"></button>
-	</div>
-	<div class='container'>
-		<div class="flex" id='overflow'>
-				<div><img src="assets/book1.png"></div>
-				<div>
-					<img src="assets/book2.png">
-					<img src="assets/book3.png">
-				</div>
-				<div><img src="assets/book4.png"></div>
-				<div><img src="assets/book5.png"></div>
-				<div><img src="assets/book1.png"></div>
-				<div>
-					<img src="assets/book2.png">
-					<img src="assets/book3.png">
-				</div>
-				<div><img src="assets/book4.png"></div>
-				<div><img src="assets/book5.png"></div>
+		<div class="d-flex flex-row justify-content-between">
+			<h1 class="headers"><span class="underlined">НАШИ РАБОТЫ</span></h1>
+			<div class="align-self-center hide">
+				<button id="slideLeft" class='scroll'><img src="assets/btns/left.png"></button>
+		    	<button id="slideRight" class='scroll'><img src="assets/btns/right.png"></button>
+	    	</div>
 		</div>
-		<div class='row'>
+		<div class='faded'>
+			<div id='overflow'>
+				<div><img src="assets/book1.png"></div>
+				<div class='d-flex flex-column justify-content-between'>
+					<img src="assets/book2.png">
+					<img src="assets/book3.png">
+				</div>
+				<div><img src="assets/book4.png"></div>
+				<div><img src="assets/book5.png"></div>
+				<div><img src="assets/book1.png"></div>
+				<div class='d-flex flex-column justify-content-between'>
+					<img src="assets/book2.png">
+					<img src="assets/book3.png">
+				</div>
+				<div><img src="assets/book4.png"></div>
+				<div><img src="assets/book5.png"></div>
+			</div>
+		</div>	
+
+		<div class='row hide'>
 			<div class='col-auto'>
 				<button class="btn">ЗАКАЗАТЬ</button>
 			</div>

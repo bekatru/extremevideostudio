@@ -1,6 +1,7 @@
   
 @media only screen and (max-width: 640px) {
 	.callback{display: none}
+	.post{text-align: right;}
 }
 
 @media only screen and (max-width: 991px) {
@@ -12,6 +13,8 @@
 /*TABLETS*/
 @media only screen and (max-width: 768px) {
 
+	/*HEADER*/
+	/*header .row{margin-right: 15%}*/
 	/*ABOUT*/
 	.about-video{display: block;}
 	.hide{display: none}

@@ -144,31 +144,46 @@ p{text-align: justify;line-height: 1}
 .popup p{margin:0px 100px}
 
 /*BANNER*/
-.banner{
+header{
 	background-image:url('../assets/bg.png');
 	background-repeat:no-repeat;
 	background-size:inherit;
 	background-position:center;
-	text-align:justify;
-  display: flex;
-  flex-flow: column;
-  height: 100vh;}
+  	}
 
-.banner .underlined:before{top: 0;right: 50%}
+header .container-sm{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
-.banner .img-fluid{margin: 5vh 0}
+header .underlined:before{top: 0;right: 50%}
 
+header .img-fluid{margin: 5vh 0}
+
+/*.top.smm{
+	position: absolute;
+	margin:0; height: 100%;left:-30px;}
+.top.smm:before{
+	position: relative;
+	left:30px; top:0;
+}*/
 
 #about{
   max-width: 552px;
   margin: 0}
 
-#next{
-  transform: rotate(90deg)}
+header .btn.book{margin-top: 5vh}
 
-.news{
-  margin-top:10vh;
-	overflow: hidden}
+.post{
+	color: black;
+	font-weight: 15;
+	width: 250px; height: 160px;
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around}
 
 .back {
   position: relative;}
@@ -176,20 +191,16 @@ p{text-align: justify;line-height: 1}
 .back:before{
 	display: block;
 	content: "";
-	background: rgba(211, 211, 211, 0.2);	
+	background: rgba(211, 211, 211, 0.8);	
 	position: absolute;
-	right:15px;
+	right:-15px;
 	width: 2000px;
 	height: 100%;}
 
-.news .container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center}
-
-.co{
-	width: 296px;
-	margin:auto 0;}
+#next{
+  transform: rotate(90deg);
+	height: 40px;
+	margin: 30px}
 
 /*NAVBAR*/
 nav.navbar.navbar-expand-lg{padding: 0}
@@ -399,7 +410,7 @@ iframe{width: 100%;height: 450px}
 
 /*FOOTER*/
 footer{background-color: black}
-footer .container{
+footer .container-lg{
 	color:gray;min-height: 200px;
 	display: flex;
 	flex-direction: row}

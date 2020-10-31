@@ -96,30 +96,31 @@ p{text-align: justify;line-height: 1}
 	width:100vw;
 	height:100vh;
 	background:rgba(0,0,0,.7);
-	z-index:1;
+	z-index:10;
 	display:none}
 
 .content{
-	position:absolute;
+	position:fixed;
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%) scale(0);
 	background:#fff;
 	width:450px;
 	height:650px;
-	z-index:2;
-	border-radius:20px}
+	z-index:11;
+	border-radius:20px
+}
 
 .popup.active .overlay{display:block}
 
 .popup.active .content{
 	transition:all .3s ease-in-out;
-	transform:translate(-50%,-50%) scale(1)}
+	transform:translate(-50%,-50%) scale(1);
+}
 
 .popup .container{
 	height: 100%;
 	display: grid;
-	grid-template-rows: repeat(auto, 8);
 	justify-items: stretch;
 	align-items: center}
 
@@ -155,7 +156,9 @@ p{text-align: justify;line-height: 1}
 	width: auto;
 	margin:0;}
 
-.popup p{margin:0px 100px}
+.popup p{margin:0px 100px;text-align: center}
+
+.popup h1 {text-align: center;margin: 0}
 
 /*BANNER*/
 header{
@@ -229,12 +232,12 @@ nav.navbar.navbar-expand-lg{padding: 0}
 .nav-item{margin-left:30px}
 
 .nav-link{
-  height: 80px;	
+  height: 60px;	
   padding: 0;
   display: flex;
   align-items: center}
 
-.nav-link:hover{
+.nav-link:hover,:focus{
   border-top:solid  #e4a847 2px;
   padding-bottom: 2px}
 
@@ -242,6 +245,11 @@ nav.navbar.navbar-expand-lg{padding: 0}
   border-top:solid  #e4a847 2px;
   padding-bottom: 2px;}
 
+.navbar-light.bg-light {
+	z-index: 4;
+}
+
+.navbar-toggler:hover{outline: none}
 
 /*SERVICES*/
 .services{height: 800px; display: flex; align-items: center;}
@@ -384,28 +392,24 @@ nav.navbar.navbar-expand-lg{padding: 0}
 /*EQUIPMENT*/
 .equipment{}
 
-.swiper-container.gallery-top {}
-
 .s3 {
   display: flex;
   flex-direction: row;
   flex-direction: wrap;
+  padding-bottom: 60px;
 }
 
-.s3 img{width: 100%; height: auto;}
+.s3 img{width: 80%; height: 80%; padding-left: 1px;}
 
 .gallery-top {
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
-.gallery-thumbs {
-  height: 160px;
-  width: 100%;}
-
-.t3{background-repeat: no-repeat}
-
-.swiper-slide-thumb-active {opacity: 50%}
+.s3 .flex-column {
+	padding-right: 20px;
+	padding-left: 20px;
+}
 
 /*CONTACTS*/
 .contacts{color: white;}
@@ -468,7 +472,11 @@ footer li a:hover{color:#fff;text-decoration:none}
 .trademarks.mobile{
 	color: gray;margin:0;
 	border-top: 2px solid gray;
-	text-align: center}
+	text-align: center;
+	padding-left: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 .trademarks.mobile li{display: none}
 

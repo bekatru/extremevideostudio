@@ -44,10 +44,10 @@
 		    </button>
 		    <div class="collapse navbar-collapse" id="topbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
-			    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
-			    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
-			    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
-			    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#onas">О НАС</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#folio">ПОРТФОЛИО</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#uslugi">ПРАЙС</a></li>
+			    	<li class="nav-item"><a class="nav-link" href="#contakty">КОНТАКТЫ</a></li>
 			    </ul>
 			    <button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
 		    </div>
@@ -149,18 +149,18 @@
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav ml-auto">
-		    	<li class="nav-item"><a class="nav-link active" href="#">О НАС</a></li>
-		    	<li class="nav-item"><a class="nav-link" href="#">ПОРТФОЛИО</a></li>
-		    	<li class="nav-item"><a class="nav-link" href="#">ПРАЙС</a></li>
-		    	<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+		    	<li class="nav-item"><a class="nav-link" href="#onas">О НАС</a></li>
+		    	<li class="nav-item"><a class="nav-link" href="#folio">ПОРТФОЛИО</a></li>
+		    	<li class="nav-item"><a class="nav-link" href="#uslugi">ПРАЙС</a></li>
+		    	<li class="nav-item"><a class="nav-link" href="#contakty">КОНТАКТЫ</a></li>
 		    </ul>
-		    <button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
+		    	<button onclick="togglePopup()" class="btn nav-item">ОСТАВИТЬ ЗАЯВКУ</button>
 	    </div>
     </div>
 </nav>
 
 <!-- SERVICES SWIPER -->
-<div class='services'>
+<div class='services' id="uslugi">
 	<div class='container'>
 		<h1 class="headers"><span class="underlined">УСЛУГИ</span></h1>
 		<div class="swiper-container service">
@@ -215,7 +215,7 @@
 
 <!-- ABOUT -->
 			
-<div class="container-xl">
+<div class="container-xl" id="onas">
 
 	<div class="d-flex justify-content-between">
 		<h1 class="headers"><span class="underlined">О НАС</span></h1>
@@ -245,7 +245,7 @@
 
 
 <!-- WHY US -->
-<div class="whyus bg-dark">
+<div class="whyus bg-dark" id="kachestva">
 	<div class="container">
 		<h1 class="headers"><span class="underlined">ПОЧЕМУ МЫ?</span></h1>
 		<div class="row">
@@ -289,7 +289,7 @@
 </div>
 
 <!-- PORTFOLIO -->
-<div class="portfolio">
+<div class="portfolio" id="folio">
 	<div class='container'>
 		<div class="d-flex flex-row justify-content-between">
 			<h1 class="headers"><span class="underlined">НАШИ РАБОТЫ</span></h1>
@@ -372,55 +372,19 @@
 			    </div>
 			</div>
 		</div>
-    	
-	    <!-- Add Arrows -->
-		<div class="swiper-container gallery-thumbs hide">
-		    <div class="swiper-wrapper">
-			    <div class="swiper-slide t3" style="background-image:url(./assets/camera1.png)"></div>
-			    <div class="swiper-slide t3" style="background-image:url(./assets/camera2.png)"></div>
-			    <div class="swiper-slide t3" style="background-image:url(./assets/camera3.png)"></div>
-			    <div class="swiper-slide t3" style="background-image:url(./assets/camera4.png)"></div>
-		    </div>
-		</div>
 	</div>
 </div>
 
-
-
 <script type="module">
   	import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-let galleryThumbs = new Swiper('.gallery-thumbs', {
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      grabCursor: true,
-      slidesPerView: 2,
-      spaceBetween: 10,
-      breakpoints: {
-      	425: {
-      		slidesPerView: 2,
-      		spaceBetween: 15,
-      	},
-      	1024: {
-      		slidesPerView: 3,
-      		spaceBetween: 10
-      	}
-      }
-    });
 
-    let galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+ 	let swiper = new Swiper('.gallery-top', {
       pagination: {
         el: '.swiper-pagination'
       },
-      thumbs: {
-        swiper: galleryThumbs
-      }
+      grabCursor: true,
     });
+
   </script>
 
 <!-- ORANGE BLOCK -->
@@ -479,7 +443,7 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
 </script>
 
 	<!-- CONTACTS -->
-	<div class="bg-dark">
+	<div class="bg-dark" id="contakty">
 		<div class="container">
 			<div class="row">
 				<div class="contacts col-md">
@@ -529,12 +493,12 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
 			</div>
 			<div class="bottom">
 			    <ul class="menu">
-			    	<li><a href="#">О НАС</a></li>
-			    	<li><a href="#">УСЛУГИ</a></li>
-			    	<li><a href="#">ПРЕИМУЩЕСТВА</a></li>
-			    	<li><a href="#">ПОРТФОЛИО</a></li>
+			    	<li><a href="#onas">О НАС</a></li>
+			    	<li><a href="#uslugi">УСЛУГИ</a></li>
+			    	<li><a href="#kachestva">ПРЕИМУЩЕСТВА</a></li>
+			    	<li><a href="#folio">ПОРТФОЛИО</a></li>
 			    	<li><a href="#">КАЛЬКУЛЯТОР</a></li>
-			    	<li><a href="#">КОНТАКТЫ</a></li>
+			    	<li><a href="#contacty">КОНТАКТЫ</a></li>
 			    </ul>
 			    <ul class='trademarks'>
 			    	<li>©ExtremeVideoStudio 2020 | ВСЕ ПРАВА ЗАЩИЩЕНЫ</li>

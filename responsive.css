@@ -23,11 +23,14 @@
 
 	/*HEADER*/
 	.post{text-align: right;}
-	header .btn.book{top:0;}
+	header .btn.book{top:0;margin-bottom: 20px}
+
 	/*ABOUT*/
 	.about-video{display: block;}
 	.hide{display: none}
 	.orange{padding: 10px 0 20px 0 !important;}
+	#about{margin-bottom:30px;text-align: right;}
+	header .img-fluid{margin: 80px 0 10px 30px;height: 90%;width: 90%;text-align: right;}
   
   	/*REVIEWS*/
   	.review img {
@@ -76,11 +79,6 @@
 
 	/*NAVBAR*/
 	.nav-item.btn {margin-bottom: 20px;}
-	.nav-link{display: block;margin: 0}
-	.navbar-nav{align-items: center;margin: 0 !important;}
-	.navbar-collapse{display: flex;flex-direction: column; justify-content: center}
-	.nav-item a {text-align: center}
-
 
 }
 

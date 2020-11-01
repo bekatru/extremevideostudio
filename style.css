@@ -373,21 +373,27 @@ nav.navbar.navbar-expand-lg{padding: 0}
   display:inline-block;
   background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)}
 
-#overflow div{margin: 16px;width: 255px;}
-
+.portfoliocard{position: relative; margin: 16px;}
 #overflow::-webkit-scrollbar{display:none}
 
-.scroll{border:none;background:0 0}
+#overflow button{
+	padding: 10px;
+	position: absolute;
+	top:0; right: 0;
+}
+
+.scroll{
+	border:none;
+	background:none;
+	transition: 0.2s}
 .scroll:focus{outline: none}
-.scroll:hover{transform: scale(1.2);transition: 0.1s}
+.scroll:hover{transform: scale(1.1);transition: 0.2s}
 .scroll:active{
 	border:none;
 	background:0;
 	outline:none;
-	transition:.1s;
+	transition:.2s;
 	transform:scale(1)}
-
-.portfolio .btn{margin-left:16px;}
 
 /*EQUIPMENT*/
 .equipment{}

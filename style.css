@@ -164,8 +164,8 @@ p{text-align: justify;line-height: 1}
 header{
 	background-image:url('../assets/bg.png');
 	background-repeat:no-repeat;
-	background-size:inherit;
-	background-position:center;
+	background-size:auto;
+	background-position:center bottom;
   	}
 
 header .container-sm{
@@ -201,15 +201,12 @@ header .btn.book{position: relative;top:45px;}
 	}
 
 .post{
-	color: black;
+	color: #5c6f7d;
 	width: 250px; height: 160px;
-	margin:auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around}
+	margin:auto;}
 
-.post h4{margin-top: 10px;font-size: 20px}
-.post p{font-size: 15px}
+.post h4{margin-top: 25px;font-size: 20px}
+.post p{font-size: 15px;}
 
 .back {
   position: relative;}
@@ -217,7 +214,7 @@ header .btn.book{position: relative;top:45px;}
 .back:before{
 	display: block;
 	content: "";
-	background: rgba(211, 211, 211, 0.8);	
+	background: rgba(216, 224, 230, 0.8);	
 	position: absolute;
 	right:-15px;
 	width: 2000px;
@@ -229,7 +226,8 @@ header .btn.book{position: relative;top:45px;}
 	margin: 30px}
 
 /*NAVBAR*/
-nav.navbar.navbar-expand-lg{padding: 0}
+nav.navbar.navbar-expand-lg{
+	padding: 0;}
 
 .nav-item{margin-left:30px}
 
@@ -254,7 +252,11 @@ nav.navbar.navbar-expand-lg{padding: 0}
 
 
 /*SERVICES*/
-.services{ display: flex; align-items: center;}
+.services{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
 
 .swiper-container.service {
   width: 100%;
@@ -289,6 +291,7 @@ nav.navbar.navbar-expand-lg{padding: 0}
 }
 
 /*ABOUT*/
+
 .about-video{
 	position: relative;
 	margin: auto 0;
@@ -354,9 +357,9 @@ nav.navbar.navbar-expand-lg{padding: 0}
 }
 
 /*PORTFOLIO*/
-.portfolio{margin-bottom: 70px}
 
 #overflow{
+	margin:1px;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
@@ -370,7 +373,7 @@ nav.navbar.navbar-expand-lg{padding: 0}
   right:0; top:0;
   width:10%; height:100%;
   display:inline-block;
-  background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)}
+  background: linear-gradient(to left, rgba(255,255,255,1) 1%,rgba(255,255,255,0) 100%)}
 
 .portfoliocard{position: relative; margin: 16px;}
 #overflow::-webkit-scrollbar{display:none}

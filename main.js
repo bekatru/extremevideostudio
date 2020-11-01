@@ -14,3 +14,12 @@ buttonLeft.onclick = function () {
 };
 
 $(".js-modal-btn").modalVideo();
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
+$( '.navbar-nav a' ).on( 'click', function () {
+	$( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});

@@ -33,7 +33,7 @@
 </div>
 
 <!-- HEADER -->
-<header>
+<header style="background-color: #eff8fe">
 	<div class='container-sm'>
 
 	<nav class="navbar navbar-expand-lg navbar-light">
@@ -119,6 +119,7 @@
 		      	watchSlidesVisibility: false,
 		      	watchSlidesProgress: true,
 		      	grabCursor: true,
+		      	autoplay: true,
 		      	slidesPerView: 1,
 		      	spaceBetween: 60,
 		      	breakpoints: {
@@ -134,7 +135,7 @@
 	</div>
 
 	<div class="align-self-center">
-		<a href="#secondpage"><button class="playbtn"><img src="assets/btns/right.png" id="next"></button></a>
+		<a href="#uslugi"><button class="playbtn"><img src="assets/btns/right.png" id="next"></button></a>
 	</div>
 	
 	
@@ -145,7 +146,7 @@
 
 <!-- NAVBAR -->
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id='secondpage'>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 	<div class="container">
 		<a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="56" height="60"></a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,18 +168,35 @@
 
 <!-- SERVICES SWIPER -->
 
-<div class='services' id="uslugi">
-	<div class='container'>
+<div class='services' id='uslugi'>
+	<div class="container">
 		<h1 class="headers"><span class="underlined">УСЛУГИ</span></h1>
+	</div>
+	
+	<div class='container'>
 		<div class="swiper-container service">
     		<div class="swiper-wrapper">
       			<div class="swiper-slide s2" style="background-image:url(./assets/uslugi1.png)"></div>
       			<div class="swiper-slide s2" style="background-image:url(./assets/uslugi2.png)"></div>
       			<div class="swiper-slide s2" style="background-image:url(./assets/uslugi3.png)"></div>
     		</div>
-   	<div class="swiper-pagination"></div>
+   			<div class="swiper-pagination"></div>
 		</div>
 	</div>
+	<!-- ORANGE BLOCK -->
+	<div class="orangeblock">
+		<div class="container">
+			<div class='row d-flex justify-content-between orange'>
+				<div class='col-auto head'>
+					<h1>Расчитайте стоимость Вашей съёмки</h1>
+					<p>с точностью в 95% прямо сейчас</p>
+				</div>
+				<div class='col-auto orange'>
+					<button onclick="togglePopup()" class="btn calc">РАСЧИТАТЬ СТОИМОСТЬ</button>
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
 
 <script type="module">
@@ -186,6 +204,7 @@
 
  	let swiper = new Swiper('.service', {
       effect: 'coverflow',
+      autoplay: true,
       grabCursor: true,
       slideToClickedSlide: true,
       loop: true,
@@ -206,20 +225,7 @@
   </script>
 
 
-<!-- ORANGE BLOCK -->
-<div class="orangeblock">
-	<div class="container">
-		<div class='row d-flex justify-content-between orange'>
-			<div class='col-auto head'>
-				<h1>Расчитайте стоимость Вашей съёмки</h1>
-				<p>с точностью в 95% прямо сейчас</p>
-			</div>
-			<div class='col-auto orange'>
-				<button onclick="togglePopup()" class="btn calc">РАСЧИТАТЬ СТОИМОСТЬ</button>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 <!-- ABOUT -->
 			
@@ -239,8 +245,8 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt. Lorem ipsum dolor sit amet.</p>
 			<p>Donec placerat vitae arcu eget placerat. Maecenas accumsan metus eu scelerisque tincidunt. Sed leo mi, facilisis tristique nisl vitae, interdum pretium sapien. Pellentesque et augue sed purus blandit semper. Ut elementum vulputate augue in placerat. Vestibulum vulputate nunc a pellentesque semper. Ut efficitur sit amet ipsum eu tincidunt.</p>
 			<div class="d-flex flex-row flex-wrap justify-content-between">
-				<button class="btn book">ПОРТФОЛИО</button>
-				<button class="btn">ЗАКАЗАТЬ</button>
+				<a href="#folio"><button class="btn book">ПОРТФОЛИО</button></a>
+				<button onclick="togglePopup()" class="btn">ЗАКАЗАТЬ</button>
 			</div>
 		</div>
 		<div class='temp hide'>
@@ -281,25 +287,24 @@
 	</div>
 </div>
 
-<!-- ORANGE BLOCK -->
-<div class="orangeblock">
-	<div class="container">
-		<div class='row d-flex justify-content-between orange'>
-			<div class='col-auto head'>
-				<h1>Есть вопросы?</h1>
-				<p>Оставьте заявку на обратную связь и мы перезвоним Вам в кратчайшие сроки!</p>
-			</div>
-			<div class='col-auto orange'>
-				<button onclick="togglePopup()" class="btn calc">ОСТАВИТЬ ЗАЯВКУ</button>
+			<!-- ORANGE BLOCK -->
+	<div class="orangeblock">
+		<div class="container">
+			<div class='row d-flex justify-content-between orange'>
+				<div class='col-auto head'>
+					<h1>Есть вопросы?</h1>
+					<p>Оставьте заявку на обратную связь и мы перезвоним Вам в кратчайшие сроки!</p>
+				</div>
+				<div class='col-auto orange'>
+					<button onclick="togglePopup()" class="btn calc">ОСТАВИТЬ ЗАЯВКУ</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 <!-- PORTFOLIO -->
 <div class="portfolio" id="folio">
-	<div class='container'>
-		<div class="d-flex flex-row justify-content-between">
+	<div class="d-flex flex-row justify-content-between container">
 			<h1 class="headers"><span class="underlined">НАШИ РАБОТЫ</span></h1>
 			<div class="align-self-center hide">
 				<button id="slideLeft" class='scroll'><img src="assets/btns/left.png"></button>
@@ -307,7 +312,7 @@
 	    	</div>
 		</div>
 
-
+	<div class='container'>
 		<div class='faded'>
 			<div id='overflow'>
 				<div class='portfoliocard'>
@@ -376,16 +381,6 @@
 				</div>
 			</div>
 		</div>	
-
-		<div class='row hide'>
-			<div class='col-auto'>
-				<button class="btn">ЗАКАЗАТЬ</button>
-			</div>
-			<div class='col'>
-				<h1>Есть вопросы?</h1>
-				<p>Оставьте заявку на обратную связь и мы перезвоним Вам в кратчайшие сроки!</p>
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -449,7 +444,19 @@
   </script>
 
 <!-- ORANGE BLOCK -->
-<div class="orangeblock"><div class='space'></div></div>
+<div class="orangeblock">
+		<div class="container">
+			<div class='row d-flex justify-content-between orange'>
+				<div class='col-auto head'>
+					<h1>Нужна камера?</h1>
+					<p>В нашем арсенале Вы найдёте идеальный инструмент!</p>
+				</div>
+				<div class='col-auto orange'>
+					<button onclick="togglePopup()" class="btn calc">КАТАЛОГ</button>
+				</div>
+			</div>
+		</div>
+	</div>	
 
 <!-- REVIEWS -->
 <div class="review">

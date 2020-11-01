@@ -234,24 +234,24 @@ nav.navbar.navbar-expand-lg{padding: 0}
 .nav-item{margin-left:30px}
 
 .nav-link{
-  height: 60px;	
-  padding: 0;
+  height: 70px;
   display: flex;
-  align-items: center}
+  align-items: center;
+  justify-content: flex-end;}
 
-.nav-link:hover{
-  border-top:solid  #e4a847 2px;
-  padding-bottom: 2px}
+.nav-item.active{
+  border-top:solid  #e4a847 2px;}
 
-.nav-link.active{
-  border-top:solid  #e4a847 2px;
-  padding-bottom: 2px;}
+.nav-item .btn{margin: 7px 0}
 
 .navbar-light.bg-light {
 	z-index: 4;
 }
 
 .navbar-toggler:hover{outline: none}
+
+.navbar-toggler:focus{outline: none}
+
 
 /*SERVICES*/
 .services{ display: flex; align-items: center;}
@@ -374,6 +374,7 @@ nav.navbar.navbar-expand-lg{padding: 0}
 
 .portfoliocard{position: relative; margin: 16px;}
 #overflow::-webkit-scrollbar{display:none}
+
 
 #overflow button{
 	padding: 10px;

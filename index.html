@@ -200,6 +200,7 @@
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
   </script>
@@ -439,7 +440,8 @@
 
  	let swiper = new Swiper('.gallery-top', {
       pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
       },
       grabCursor: true,
     });
@@ -488,13 +490,14 @@
   	import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
  	let swiper = new Swiper('.swiper1', {
-      cssMode: true,
+ 	  grabCursor: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
       pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
       },
       mousewheel: true,
       keyboard: true,

@@ -1,0 +1,84 @@
+.close-btn{
+	width:30px;
+	height:30px;
+	align-self: center;
+	justify-self: end;
+}
+
+.overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,.7);
+	z-index:10;
+	display:none}
+
+.content{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0);
+	background:#fff;
+	width:450px;
+	height:650px;
+	z-index:11;
+	border-radius:20px;
+}
+
+.popup.active .overlay{
+	display:block;
+}
+
+.popup.active .content{
+	transition:all .3s ease-in-out;
+	transform:translate(-50%,-50%) scale(1);
+}
+
+.popup .container{
+	height: 100%;
+	display: grid;
+	justify-items: stretch;
+	align-items: center;
+}
+
+.popup .logo{
+	align-self: center;
+	margin:auto;
+}
+
+.line{
+	display:block;
+	width:100%;
+	height:2px;
+	background-color:#e4a847;
+	margin: auto;
+}
+
+.popupholder{
+	height:55px;
+	border-radius:60px;
+	border-color:#e4a847;
+	border-style:solid;
+	text-align: center;
+}
+
+.popupholder:active,:focus,:hover{
+	outline:0;
+	outline-offset:0}
+
+.popup .btn{
+	width: auto;
+	margin:0;
+}
+
+.popup p{
+	margin:0px 100px;
+	text-align: center;
+}
+
+.popup h1{
+	text-align: center;
+	margin: 0;
+}

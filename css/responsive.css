@@ -135,6 +135,10 @@
 	.headers{
 		font-size: 36px;
 	}
+	
+	header .container-sm{
+		height: 750px;
+	}
 
 	/*NAVBAR*/
 	.navbar-brand{padding-left: 15px}

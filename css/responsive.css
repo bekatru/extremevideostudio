@@ -208,8 +208,8 @@
 @media only screen and (max-width: 375px) {
 	/*POPUP*/
 	.content{
-		width:320px;
-		height:420px;
+		width:340px;
+		height:450px;
 	}
 	.popup p{
 		margin: 0;
